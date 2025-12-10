@@ -6,10 +6,6 @@ __pycache__/
 .env
 .vscode/
 
-# Models & logs
-models/*
-logs/
-wandb/
 
 # Jupyter
 .ipynb_checkpoints/
