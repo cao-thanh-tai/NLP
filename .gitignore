@@ -1,0 +1,15 @@
+# Conda
+conda/
+miniconda3/
+__pycache__/
+*.pyc
+.env
+.vscode/
+
+# Models & logs
+models/*
+logs/
+wandb/
+
+# Jupyter
+.ipynb_checkpoints/
