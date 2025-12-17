@@ -22,7 +22,7 @@ refs = []
 hyps = []
 smooth = SmoothingFunction().method1   # smoothing to avoid zero BLEU on short ngrams
 
-print("Đang tính BLEU (có smoothing)...")
+print("Đang tính BLEU ")
 for _, _, en_sent, de_sent in tqdm(valid_dataset):
     # Greedy translate English sentence to German
     pred = translate_sentence_beam(en_sent)
@@ -36,4 +36,4 @@ for _, _, en_sent, de_sent in tqdm(valid_dataset):
     hyps.append(pred.lower().split())
 
 bleu = corpus_bleu(refs, hyps, smoothing_function=smooth)
-print(f"\nHOÀN TẤT! BLEU = {bleu*100:.2f} ← ĐÂY LÀ ĐIỂM THẬT, NỘP BÀI NGON LÀNH!!!")
+print(f"\nBLEU = {bleu*100:.2f}")

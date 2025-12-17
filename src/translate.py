@@ -130,7 +130,6 @@ def translate_sentence_beam(sentence: str, beam_width=3, max_len=60):
     translated_tokens = [de_vocab.get_itos()[i] for i in best_seq[1:]]  # bỏ <sos>
     return ' '.join(translated_tokens).replace(" <eos>", "")
 
-# TEST NGAY 10 CÂU ĐẸP
 if __name__ == "__main__":
     test_sentences = [
         "A man is playing a guitar.",

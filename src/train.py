@@ -97,7 +97,6 @@ for epoch in range(EPOCHS):
         torch.save(model.state_dict(), f"{SAVE_DIR}/best_seq2seq.pt")
         print("Saved new best model!")
 
-print("HOÀN TẤT HUẤN LUYỆN! Model tốt nhất nằm ở:", f"{SAVE_DIR}/best_seq2seq.pt")
 
 # ------------------- Plot Loss Curves -------------------
 plt.figure()
@@ -110,4 +109,3 @@ plt.legend()
 plt.grid(True)
 plt.tight_layout()
 plt.savefig("logs/loss_curve.png")
-print("Đã lưu biểu đồ loss tại logs/loss_curve.png")

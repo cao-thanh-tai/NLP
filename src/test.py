@@ -14,6 +14,7 @@ test = Multi30k(split='test', language_pair=('en', 'de'))
 
 train_list = list(train)
 valid_list = list(valid)
+# test_list = list(test)
 
 print(f"Số câu trong tập train: {len(train_list)}")
 print(f"Số câu trong tập valid: {len(valid_list)}")
